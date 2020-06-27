@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorPrimary"
-    android:layout_margin="0dp">
+    android:layout_height="250dp"
+    android:layout_margin="0dp"
+    android:background="#4CAF50"
+    android:backgroundTint="#4CAF50">
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -17,6 +18,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
+        android:backgroundTint="#CDDC39"
         android:src="@drawable/flicks_movie_placeholder"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -27,12 +29,14 @@
         android:layout_marginStart="5dp"
         android:layout_marginRight="116dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:textSize="24sp"
+        android:textColor="#FFEB3B"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
         tools:text="Britt-Marie Was Here" />
 
     <TextView
         android:id="@+id/tvOverview"
-        android:layout_width="wrap_content"
+        android:layout_width="275dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_alignBottom="@id/tvTitle"
@@ -41,7 +45,10 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        android:layout_marginBottom="-126dp"
+        android:layout_marginBottom="-183dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:textColor="#FFEB3B"
+        android:textSize="11sp"
+        android:textStyle="italic"
         tools:text="Britt-Marie, a woman in her sixties, decides to leave her husband and start anew. Having been housewife for most of her life and and living in small backwater town of Borg, there isn't many jobs available and soon she finds herself fending a youth football team." />
 </RelativeLayout>

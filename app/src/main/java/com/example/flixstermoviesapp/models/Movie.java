@@ -13,6 +13,8 @@ public class Movie {
     String overview;
     String backdropPath;
 
+
+
     public Movie(JSONObject jsonObject) throws JSONException {
         posterPath = jsonObject.getString("poster_path");
         backdropPath = jsonObject.getString("backdrop_path");

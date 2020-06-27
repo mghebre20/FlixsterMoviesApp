@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CircleCrop;
 import com.example.flixstermoviesapp.R;
 import com.example.flixstermoviesapp.models.Movie;
 
@@ -27,6 +28,7 @@ public class MovieAdapter extends  RecyclerView.Adapter<MovieAdapter.ViewHolder>
         this.context = context;
         this.movies = movies;
     }
+
 
     //inflates layout from XML and returns view holder
     @NonNull
@@ -76,12 +78,21 @@ public class MovieAdapter extends  RecyclerView.Adapter<MovieAdapter.ViewHolder>
             if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
                 // then set imageUrl = back drop image
                 imageUrl = movie.getBackdropPath();
+
             } else {
                 //else imageUrl = poster image
                 imageUrl = movie.getPosterPath();
+
             }
 
-            Glide.with(context).load(imageUrl).into(ivPoster);
+
+            Glide.with(context)
+                    .load(movie.getPosterPath() )
+                    .placeholder(R.drawable.flicks_backdrop_placeholder)
+                    .circleCrop() // scale to fit entire image within ImageView
+                    .into(ivPoster);
+
+
         }
     }
 }

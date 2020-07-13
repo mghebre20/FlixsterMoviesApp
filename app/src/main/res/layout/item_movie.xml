@@ -3,10 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="250dp"
+    android:layout_height="wrap_content"
     android:layout_margin="0dp"
-    android:background="#4CAF50"
-    android:backgroundTint="#4CAF50">
+    android:layout_marginStart="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="0dp"
+    android:background="#000000"
+    android:backgroundTint="#000000">
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -29,7 +35,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginRight="116dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:textColor="#FFEB3B"
+        android:textColor="#FF001E"
         android:textSize="26sp"
         android:textStyle="bold|italic"
         tools:text="Britt-Marie Was Here" />
@@ -47,7 +53,7 @@
         android:layout_marginRight="0dp"
         android:layout_marginBottom="-183dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:textColor="#FFEB3B"
+        android:textColor="#FF0009"
         android:textSize="11sp"
         android:textStyle="italic"
         tools:text="Britt-Marie, a woman in her sixties, decides to leave her husband and start anew. Having been housewife for most of her life and and living in small backwater town of Borg, there isn't many jobs available and soon she finds herself fending a youth football team." />

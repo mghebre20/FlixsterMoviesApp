@@ -34,14 +34,14 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://media.giphy.com/media/VFYRNHx3kqEMx9FFT2/giphy.gif' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/LmrHNZw1cf0iTXHgW9/giphy.gif' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/RiQ1n2uHLPD6W7Cy9g/giphy.gif' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
-- debugging errors took time
 
 ## Open-source libraries used
 
